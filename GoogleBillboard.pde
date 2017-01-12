@@ -4,16 +4,16 @@ public final static String e = "2.7182818284590452353602874713526624977572470936
 
 
 for(int i=2; i<e.length()-10; i++){
+	//String substring(int beginIndex,int endIndex)
 	String digits = e.substring(i,i+10);
 	 double dNum = Double.parseDouble(digits);
 
 
 	if(isPrime(dNum)==true){
-    System.out.println(digits);
-   //  System.out.println(dNum);
+    System.out.println(dNum);
      break;
- }
-
+ 
+}
 
  public void draw()  
  {   
@@ -23,12 +23,11 @@ for(int i=2; i<e.length()-10; i++){
  public boolean isPrime(double dNum)  
  {   
      //to be finished later   
-
   for (int i = 2; i<=Math.sqrt(dNum); i++)
     if(dNum % i ==0) 
       return false; 
       
-
+}
   return true;
   
  }  
